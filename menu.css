@@ -1,0 +1,57 @@
+body{
+      margin: 0;
+      font-family: inconsolata;
+    }
+    h3{
+      font-weight: normal;
+    }
+    p{
+      color: rgba(8, 11, 185, 0.728);
+    }
+    #Eat,#Drink{
+      display: none;
+    }
+    .eat_container{
+      display: none;
+      background-color:rgb(236, 145, 210);
+      margin-top: 15px;
+      padding:10px;
+      width: 100%;
+    }
+    #Eat:checked~.eat_container{
+      display: block;
+    }
+    #Eat:checked~.drink_container{
+      display: none;
+    }
+    h3,p{
+      padding: 7px;
+    }
+    label{
+      font-size: 20px;
+    }
+    .drink_container{
+      display: block;
+      background-color:rgba(175, 235, 236, 0.295);
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+    }
+    .menu{
+      width: 700px;
+      margin: 20px auto;
+    }
+    label{
+      display:inline-block;
+      width: 48%;
+      text-align: center;
+      padding:5px;
+    }
+    #Eat:checked+label{
+      background-color:rgb(165, 190, 35);
+      color: rgb(146, 74, 74);
+    }
+    #Drink:checked+label{
+      background-color:rgb(6, 223, 17);
+      color: rgb(40, 8, 79);
+    }
