@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: raleway;
+ }
+ .header{
+  width: 100%;
+  display: flex;
+  padding: 40px;
+  font-size: 26px;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+} 
+.img-container{
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  margin-top: 114.67px;
+  gap: 1px;
+}
+.imgitem>img{
+  width:100%;
+  object-fit: cover;
+}
+.parent{
+  display: flex;
+  justify-content: center;
+}
+.imgitem{
+    width: 200px;
+}
