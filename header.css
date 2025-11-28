@@ -1,0 +1,173 @@
+ *{
+      margin: 0;
+      padding: 0;
+      font-family: 'work sans', sans-serif;
+      box-sizing: border-box;
+    }
+    body,html{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    .header{
+      border-bottom: solid 1px rgb(195, 193, 193);
+      background-color: white;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      padding: 10px 0px;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1320px;
+      margin:0px auto;
+    }
+    .right-section{
+      display: flex;
+      align-items: center;
+      justify-content: left !important;
+      gap: 15px;
+      flex-grow: 1;
+      /* flex-shrink: 2; */
+    }
+    .right-section>.logo{
+      background-color:#d4fb29 ;
+      padding: 15px 22px;
+      color: white;
+      font-weight: 500;
+      font-size: 24px;
+      border-radius: 40px;
+      text-align: center;
+    }
+    .bi-list{
+      transition: all 0.15s ease;
+    }
+    .header h2{
+      font-weight: 600;
+      font-size: 28px;
+    }
+    .container>#ham{
+      font-size:18px;
+      padding:5px 10px;
+      border-radius: 5px;
+      display: none;
+      margin: 0px 5px;
+    }
+    #ham:hover{
+      background-color: rgba(0,0,0,0.05);
+      cursor: pointer;
+    }
+    .left-section {
+      display: flex;
+      padding: 0px 20px;
+    }
+    .left-section ul {
+      display: flex;
+      padding: 0px 20px;
+      list-style: none;
+    }
+    .left-section a{
+      display:inline-block;
+      padding: 15px 20px;
+      font-size: 17px;
+      color: black;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hams-menu a{
+      display: block;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-size: 17px;
+      color: black;
+      font-weight: 400;
+    }
+    a{
+      transition: all 0.6s ease;
+    }
+    a:hover{
+      background-color: rgba(0,0,0,0.05);
+      border-radius: 5px;
+      color: #cae75a ;
+    }
+    .end-section button{
+      padding: 15px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: #d0e14e;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      transition: all 0.15s ease;
+    }
+    .end-section button:hover{
+      background-color:rgb(180, 208, 94);
+      scale: 102%;
+    }
+    
+    input{
+      display: none;
+    }
+    label{
+      display: block;
+    }
+    .hams-menu{
+      width: 99%;
+      position: absolute;
+      top: 78px;
+      opacity: 0;
+      visibility: hidden;
+      box-shadow: -1px 2px 4px #ccc;
+      left: 5px;
+      border-bottom-left-radius: 10px;
+      transition: all 0.15s ease;
+      background-color: white;
+      z-index: 9999;
+    }
+    #hams:checked+.hams-menu{
+      visibility: visible;
+      opacity: 1;
+    }
+    a.active{
+      background-color: #b3d24b;
+      color: white;
+      border-radius: 5px;
+    }
+
+    @media (max-width:1234px) {
+       .bi-list{
+      visibility: visible;
+      opacity: 1;
+    }
+      .container>#ham{
+        display: block;
+      }
+      .left-section{
+        display: none;
+      }
+      .container{
+        width: 100%;
+      }
+      .end-section{
+      padding: 0px 10px 0px 0px;
+      display: flex;
+      justify-content: center;
+    }
+    .right-section h2{
+      font-size: 22px;
+    }
+      
+    } 
+    @media (min-width:1234px){
+      .hams-menu{
+        display: none;
+      }
+    }
+    
